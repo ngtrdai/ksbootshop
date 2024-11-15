@@ -42,24 +42,6 @@
           </div>
         {% endfor %}
       </div>
-      {% if section.blocks.size > 1 %}
-        <button 
-          class="carousel-control carousel-control-prev" 
-          type="button" 
-          data-bs-target="#carousel-{{ section.id }}" 
-          data-bs-slide="prev"
-          aria-label="{{ 'general.accessibility.previous' | t }}">
-          {% render 'svg-icons', icon: 'chevron-left', size: 22 %}
-        </button>
-        <button 
-          class="carousel-control carousel-control-next" 
-          type="button" 
-          data-bs-target="#carousel-{{ section.id }}" 
-          data-bs-slide="next"
-          aria-label="{{ 'general.accessibility.next' | t }}">
-          {% render 'svg-icons', icon: 'chevron-right', size: 22 %}
-        </button>
-      {% endif %}
     </div>
   </div>
 </section>
